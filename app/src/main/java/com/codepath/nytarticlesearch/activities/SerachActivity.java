@@ -105,9 +105,9 @@ public class SerachActivity extends AppCompatActivity {
                 try {
                     articlesResults = response.getJSONObject("response").getJSONArray("docs");
                     articleArrayAdapter.addAll(Article.fromJSONArray(articlesResults));
-/*                    articles.addAll(Article.fromJSONArray(articlesResults));
-                    articleArrayAdapter.notifyDataSetChanged();*/
-                    Log.d("DEBUG", articles.toString());
+                    articles.addAll(Article.fromJSONArray(articlesResults));
+                    //articleArrayAdapter.notifyDataSetChanged();
+                    //Log.d("DEBUG", articles.toString());
                 } catch (JSONException ex) {
 
                 }
@@ -115,7 +115,7 @@ public class SerachActivity extends AppCompatActivity {
 
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 super.onFailure(statusCode, headers, responseString, throwable);
-                Log.d("Failed: ", ""+statusCode);
+                Log.d("Failed: ", "" + statusCode);
                 Log.d("Error : ", "" + throwable);
             }
         });
