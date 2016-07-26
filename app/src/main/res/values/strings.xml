@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTArticleSearch</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">Enter Search Query</string>
+    <string name="search">Search</string>
+    <string name="api_key">dcda88176cf3459c9edc60d0ed25b5bb</string>
+</resources>
