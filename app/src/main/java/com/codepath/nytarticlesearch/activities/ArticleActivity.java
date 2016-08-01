@@ -15,7 +15,8 @@ public class ArticleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article);
 
-        Article article = (Article) getIntent().getSerializableExtra("article");
+        // Extract book object from intent extras
+        final Article article = (Article) getIntent().getParcelableExtra("theArticle");
         WebView webView = (WebView) findViewById(R.id.wvArticle);
 
         webView.setWebViewClient(new WebViewClient(){

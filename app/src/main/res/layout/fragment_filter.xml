@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvBeginDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/begin_date_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/tvPickerBeginDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/tvBeginDate"
+        android:layout_toRightOf="@+id/tvBeginDate"
+        android:layout_toEndOf="@+id/tvBeginDate"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tvSortOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_order_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/tvBeginDate"
+        android:layout_alignLeft="@+id/tvBeginDate"
+        android:layout_alignStart="@+id/tvBeginDate"
+        android:layout_marginTop="18dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSortOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/tvSortOrder"
+        android:layout_alignLeft="@+id/tvPickerBeginDate"
+        android:layout_alignStart="@+id/tvPickerBeginDate" />
+
+    <TextView
+        android:id="@+id/tvNewsDesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_desks_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/tvSortOrder"
+        android:layout_alignLeft="@+id/tvSortOrder"
+        android:layout_alignStart="@+id/tvSortOrder"
+        android:layout_marginTop="18dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxArts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/arts"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/tvNewsDesk"
+        android:layout_alignLeft="@+id/tvNewsDesk"
+        android:layout_alignStart="@+id/tvNewsDesk" />
+
+    <CheckBox
+        android:id="@+id/checkboxSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/sports"
+        android:layout_alignTop="@+id/checkBoxArts"
+        android:layout_toRightOf="@+id/checkBoxArts"
+        android:layout_toEndOf="@+id/checkBoxArts" />
+
+    <CheckBox
+        android:id="@+id/checkboxFashionStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/fashionStyle"
+        android:layout_alignTop="@+id/checkboxSports"
+        android:layout_toRightOf="@+id/checkboxSports"
+        android:layout_toEndOf="@+id/checkboxSports" />
+
+    <Button
+        android:id="@+id/btCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:layout_below="@+id/checkBoxArts"
+        android:layout_alignLeft="@+id/checkBoxArts"
+        android:layout_alignStart="@+id/checkBoxArts" />
+
+    <Button
+        android:id="@+id/btOK"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginLeft="35dp"
+        android:layout_alignTop="@+id/btCancel"
+        android:layout_toRightOf="@+id/btCancel"
+        android:layout_toEndOf="@+id/btCancel"/>
+
+</RelativeLayout>

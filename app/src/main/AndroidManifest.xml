@@ -3,8 +3,10 @@
     package="com.codepath.nytarticlesearch">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".Receivers.NYTApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,4 +25,11 @@
         <activity android:name=".activities.ArticleActivity"></activity>
     </application>
 
+    <receiver
+        android:name=".Receivers.ConnectivityReceiver"
+        android:enabled="true">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
 </manifest>

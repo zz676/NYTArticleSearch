@@ -4,4 +4,15 @@
     <string name="hint">Enter Search Query</string>
     <string name="search">Search</string>
     <string name="api_key">dcda88176cf3459c9edc60d0ed25b5bb</string>
+    <string name="no_connection_text">There is no Internet connection</string>
+    <string name="begin_date_text">Begin Date:</string>
+    <string name="sort_order_text">Sort Order:</string>
+    <string name="arts">Arts</string>
+    <string name="sports">Sports</string>
+    <string name="fashionStyle">Fashion &amp; Style</string>
+    <string name="new_desks_text">News Desks:</string>
+    <string-array name="status_levels">
+        <item>oldest</item>
+        <item>newest</item>
+    </string-array>
 </resources>
